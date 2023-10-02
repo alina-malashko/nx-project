@@ -1,0 +1,12 @@
+import { UiLibModule } from '../../../../../../ui-lib/src/lib/ui-lib.module';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { MainPageRoutingModule } from './main-page-routing.module';
+import { MainPageComponent } from './main-page/main-page.component';
+
+@NgModule({
+  declarations: [MainPageComponent],
+  imports: [CommonModule, MainPageRoutingModule, UiLibModule],
+})
+export class MainPageModule {}
